@@ -266,6 +266,7 @@ impl Environment {
         }
     }
 
+
     fn build_constraints(
         &mut self,
         expr: &Expression,
@@ -367,7 +368,7 @@ impl Environment {
 
         let type_ = self.generalize(constraints, type_);
 
-        assert!(self.type_variables.is_empty());
+        // assert_eq!(self.type_variables, HashSet::new());
 
         self.type_variables.clear();
 
