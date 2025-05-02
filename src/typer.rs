@@ -266,7 +266,6 @@ impl Environment {
         }
     }
 
-
     fn build_constraints(
         &mut self,
         expr: &Expression,

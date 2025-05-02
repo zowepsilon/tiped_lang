@@ -25,7 +25,7 @@ let fix = extern (('a -> 'b) -> 'a -> 'b) -> 'a -> 'b
 
 let id = (fun x -> x)(fun x -> x)
 
-let loop = 
+let loop =
   let loop_inner = fun rec f ->
     let _ = f(unit) in
     rec(f)

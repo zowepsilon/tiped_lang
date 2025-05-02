@@ -116,6 +116,7 @@ pub struct Token {
     pub column: usize,
 }
 
+#[expect(unused)]
 #[derive(Debug, Clone)]
 pub enum LexingError {
     MisplacedCharacter(char),
