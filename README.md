@@ -16,7 +16,7 @@ You can also import a file to be type checked before entering the REPL:
 cargo run -- test.tp
 ```
 
-In the REPL expressions are terminated with a `;`, similarly to `;;` in utop.
+In the REPL expressions are terminated with a `;`, similar to `;;` in utop.
 
 ### Examples
 
