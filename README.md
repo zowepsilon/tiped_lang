@@ -28,7 +28,7 @@ Some examples from [test.tp](test.tp):
 #> let id = fun x -> x; 
 id: ∀ 'a, 'a -> 'a
 
-#> let id2 = fun x -> x;
+#> let id2 = (fun x -> x)(fun x -> x);
 id2: ∀ 'a, 'a -> 'a
 
 // Typing some equivalent to List.map
