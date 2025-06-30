@@ -71,7 +71,7 @@ let map =
 
 The algorithm works roughly as follows: to type a given expression, the algorithm starts generating type equality constraints from the expression by introducing type variables and then solves this system of constraints using unification. If any unification variable was left unsolved, we promote it to a generalized variable.
 
-### Ressources used (either directly or indirectly)
+### Resources used (either directly or indirectly)
 
 - https://cs3110.github.io/textbook/chapters/interp/inference.html
 - https://en.wikipedia.org/wiki/Type_inference
