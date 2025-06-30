@@ -4,6 +4,8 @@ This is an implementation of type inference in a Hindley-Milner type system usin
 It can parse and type check full expressions without type annotations.
 The syntax is based on OCaml's with a few differences.
 
+I made this project to apply some of the research I had been doing for my TIPE.
+
 ### Usage
 
 You can input expression in a REPL:
