@@ -60,3 +60,22 @@ let map =
 // Produces map: ∀ 'a 'b, ('b -> 'a) -> 'b list -> 'a list
 
 ```
+
+### Architecture
+
+- `src/main.rs`, `src/lexer.rs`, `src/parser.rs`: self-explanatory
+- `src/tree.rs`: AST types and pretty printing
+- `src/typer.rs`: the type inference algorithm
+
+### Algorithm
+
+The algorithm works roughly as follows: to type a given expression, the algorithm starts generating type equality constraints from the expression by introducing type variables and then solves this system of constraints using unification. If any unification variable was left unsolved, we promote it to a generalized variable.
+
+### Ressources used (either directly or indirectly)
+
+- https://cs3110.github.io/textbook/chapters/interp/inference.html
+- https://en.wikipedia.org/wiki/Type_inference
+- https://en.wikipedia.org/wiki/Unification_(computer_science)
+- https://www.csd.uwo.ca/~mmorenom/cs2209_moreno/read/read6-unification.pdf
+- https://docs.julialang.org/en/v1/devdocs/inference/
+- https://langdev.stackexchange.com/questions/2424/when-do-we-need-complex-type-inference
